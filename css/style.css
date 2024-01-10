@@ -1,0 +1,6 @@
+.menu-banner {
+    height: 200px;
+    background-image: url('../images/banner-header.png');
+    background-size: contain;
+  background-position: center;
+}
