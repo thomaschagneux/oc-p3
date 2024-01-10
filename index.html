@@ -12,46 +12,42 @@
 <body>
 
     <header>
-        <div class="menu mx-1 my-1 align-items-center">
-
-            <div class="accordion d-flex flex-column d-md-none">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#toogleMenu"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <img src="images/Les_films_de_plein_air.png" alt="" width="50" height="50">
-                </button>
-                <div id="toogleMenu" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                    <div class="accordion-body">
-                        <span>Intro</span>
-                        <span>Actus</span>
-                        <span>Galerie</span>
-                        <span>Préinscription</span>
-                        <span>Carte</span>
-                        <span>A propos</span>
-                        <span>Partenaires</span>
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand col-2" href="#"><img src="images/Les_films_de_plein_air.png" alt=""
+                            width="67" height="50"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav col-10 justify-content-around">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Actus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galerie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Préinscription</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Carte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Partenaires</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-
-            <div class="classic-menu d-none d-md-flex">
-                <div class="logo col-2 justify-content-around">
-                    <a href="#">
-                        <img src="images/Les_films_de_plein_air.png" alt="logo" width="50" height="50">
-                    </a>
-                </div>
-                <nav class="col-10">
-                    <ul class="d-flex flex-row justify-content-around list-unstyled">
-                        <li>Intro</li>
-                        <li>Actus</li>
-                        <li>Galerie</li>
-                        <li>Préinscription</li>
-                        <li>Carte</li>
-                        <li>A propos</li>
-                        <li>Partenaires</li>
-                    </ul>
-                </nav>
-
-            </div>
-
+            </nav>
         </div>
     </header>
 
