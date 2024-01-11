@@ -147,9 +147,33 @@
         </section>
 
         <section id="pre-registration" class="mt-5">
-            <div class="form">
-                <!-- ici pour un formulaire de pré-inscription -->
-            </div>
+            
+                <form action="" method="get">
+                    <!-- nom / mail /  message -->
+                    <div class="row d-flex justify-content-between px-5">
+                        <div class="mb-3 col-lg-6">
+                            <label for="pre-registration-name" class="form-label">Entre votre nom:</label>
+                            <input type="text" class="form-control" id="pre-registration-name" required>
+                        </div>
+                        <div class="mb-3 col-lg-6">
+                            <label for="pre-registration-mail" class="form-label">Entrez votre mail:</label>
+                            <input type="email" class="form-control" id="pre-registration-mail" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 px-5">
+                        <label for="pre-registration-message" class="form-label">message:</label>
+                        <textarea class="form-control" id="pre-registration-message" rows="4"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="submit text-end px-5">
+                            <button type="submit" value="Se pré-inscrire" class="btn btn-primary">
+                                Se pré-inscrire
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
         </section>
         <section id="map" class="mt-5">
             <div class="gmap">
