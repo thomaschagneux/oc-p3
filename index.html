@@ -147,37 +147,48 @@
         </section>
 
         <section id="pre-registration" class="mt-5">
-            
-                <form action="" method="get">
-                    <!-- nom / mail /  message -->
-                    <div class="row d-flex justify-content-between px-5">
-                        <div class="mb-3 col-lg-6">
-                            <label for="pre-registration-name" class="form-label">Entre votre nom:</label>
-                            <input type="text" class="form-control" id="pre-registration-name" required>
-                        </div>
-                        <div class="mb-3 col-lg-6">
-                            <label for="pre-registration-mail" class="form-label">Entrez votre mail:</label>
-                            <input type="email" class="form-control" id="pre-registration-mail" required>
-                        </div>
-                    </div>
 
-                    <div class="mb-3 px-5">
-                        <label for="pre-registration-message" class="form-label">message:</label>
-                        <textarea class="form-control" id="pre-registration-message" rows="4"></textarea>
+            <form action="" method="get">
+                <!-- nom / mail /  message -->
+                <div class="row d-flex justify-content-between px-5">
+                    <div class="mb-3 col-lg-6">
+                        <label for="pre-registration-name" class="form-label">Entre votre nom:</label>
+                        <input type="text" class="form-control" id="pre-registration-name" required>
                     </div>
-                    <div class="row">
-                        <div class="submit text-end px-5">
-                            <button type="submit" value="Se pré-inscrire" class="btn btn-primary">
-                                Se pré-inscrire
-                            </button>
-                        </div>
+                    <div class="mb-3 col-lg-6">
+                        <label for="pre-registration-mail" class="form-label">Entrez votre mail:</label>
+                        <input type="email" class="form-control" id="pre-registration-mail" required>
                     </div>
-                </form>
+                </div>
+
+                <div class="mb-3 px-5">
+                    <label for="pre-registration-message" class="form-label">message:</label>
+                    <textarea class="form-control" id="pre-registration-message" rows="4"></textarea>
+                </div>
+                <div class="row">
+                    <div class="submit text-end px-5">
+                        <button type="submit" value="Se pré-inscrire" class="btn btn-primary">
+                            Se pré-inscrire
+                        </button>
+                    </div>
+                </div>
+            </form>
 
         </section>
         <section id="map" class="mt-5">
-            <div class="gmap">
-                <!-- ici pour un widget google map -->
+            <div class="px-5 d-flex flex-row justify-content-between">
+                <div class="gmap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735574306593!2d2.3040840917537633!3d48.87968692530546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1704974709612!5m2!1sfr!2sfr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="itinerary d-flex flex-column justify-content-around">
+                    <p>Instructions pour aller au parc Menseau</p>
+                    <p>Instructions pour aller au parc Menseau</p>
+                    <p>Instructions pour aller au parc Menseau</p>
+                    <p>Instructions pour aller au parc Menseau</p>
+                </div>
             </div>
         </section>
         <section id="about-us" class="mt-5">
