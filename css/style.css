@@ -10,3 +10,8 @@
     height: 500px;
    
 }
+
+.about-us p {
+  line-height: 3;
+  height: 100%;
+}
