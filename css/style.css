@@ -1,8 +1,14 @@
-.menu-banner {
-    height: 200px;
-    background-image: url('../images/banner-header.png');
-    background-size: contain;
-  background-position: center;
+main {
+  max-width: 1440px;
+}
+
+
+#poster .container {
+  display: flex;
+}
+#poster .container .film {
+  width: 500px;
+  
 }
 
 .carousel-item-img {
