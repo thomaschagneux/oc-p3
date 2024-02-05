@@ -1,16 +1,28 @@
+* {
+  font-size: 18px;
+}
+
+body {
+  background-color: #800000;
+}
+
 header {
   .nav-link:active {
     color: #800000;
     text-decoration: underline;
   }
   .nav-link:hover {
-color: #800000;
-text-decoration: underline;
+    color: #800000;
+    text-decoration: underline;
   }
 }
 
 main {
   max-width: 1440px;
+}
+
+main > section {
+  padding: 0 10 !important;
 }
 
 .note {
