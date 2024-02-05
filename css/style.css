@@ -2,6 +2,15 @@
   font-size: 18px;
 }
 
+.btn-primary {
+  background: #800000;
+  color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFD700;
+}
+
 body {
   background-color: #800000;
 }
