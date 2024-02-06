@@ -73,8 +73,11 @@
       </div>
     </header>
     <main class="d-flex flex-column align-content-center container">
-      <section id="poster" class="mt-5 p-1 bg-light">
-        <div class="container d-flex flex-wrap justify-content-between">
+      <section id="poster" class="mt-5 p-1">
+        <h2 class="section-title text-center">Films à l'affiche</h2>
+        <div
+          class="container d-flex flex-wrap justify-content-between bg-light"
+        >
           <div class="card my-3" style="width: 400px">
             <img src="./images/poster1.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -145,6 +148,7 @@
       </section>
 
       <section id="calendar" class="mt-5 p-1">
+        <h2 class="section-title text-center">Calendrier du festival</h2>
         <div class="calendar-wrap">
           <h2 class="month-year">January 2020</h2>
 
@@ -283,7 +287,10 @@
         </div>
       </section>
 
-      <section id="actus" class="mt-5 row p-1 bg-light">
+      <section id="actus" class="mt-5 row p-1">
+        <h2 class="section-title text-center">
+          Actualités de l'association et du festival
+        </h2>
         <div class="col-md-6">
           <div class="articles">
             <div class="container">
@@ -381,7 +388,8 @@
         </div>
       </section>
 
-      <section id="galery" class="mt-5 p-1 bg-light">
+      <section id="galery" class="mt-5 p-1">
+        <h2 class="section-title text-center">Galerie d'images</h2>
         <div class="container-fluid">
           <div id="galery-carousel" class="carousel slide">
             <div class="carousel-indicators">
@@ -485,63 +493,66 @@
         </div>
       </section>
 
-      <section id="pre-registration" class="mt-5 p-1 bg-light">
-        <form action="" method="get">
-          <!-- nom / mail /  message -->
-          <div class="row d-flex justify-content-between px-5">
-            <div class="mb-3 col-lg-6">
-              <label for="pre-registration-name" class="form-label"
-                >Entre votre nom:</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="pre-registration-name"
-                required
-              />
+      <section id="pre-registration" class="mt-5 p-1">
+        <h2 class="section-title text-center">Formulaire de pré-inscription</h2>
+        <div class="container bg-light">
+          <form method="get">
+            <!-- nom / mail /  message -->
+            <div class="row d-flex justify-content-between px-5">
+              <div class="mb-3 col-lg-6">
+                <label for="pre-registration-name" class="form-label"
+                  >Entre votre nom:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="pre-registration-name"
+                  required
+                />
+              </div>
+              <div class="mb-3 col-lg-6">
+                <label for="pre-registration-mail" class="form-label"
+                  >Entrez votre mail:</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="pre-registration-mail"
+                  required
+                />
+              </div>
             </div>
-            <div class="mb-3 col-lg-6">
-              <label for="pre-registration-mail" class="form-label"
-                >Entrez votre mail:</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="pre-registration-mail"
-                required
-              />
-            </div>
-          </div>
 
-          <div class="mb-3 px-5">
-            <label for="pre-registration-message" class="form-label"
-              >message:</label
-            >
-            <textarea
-              class="form-control"
-              id="pre-registration-message"
-              rows="4"
-            ></textarea>
-          </div>
-          <div class="row">
-            <div class="submit text-end px-5">
-              <button
-                type="submit"
-                value="Se pré-inscrire"
-                class="btn btn-primary"
+            <div class="mb-3 px-5">
+              <label for="pre-registration-message" class="form-label"
+                >message:</label
               >
-                Se pré-inscrire
-              </button>
+              <textarea
+                class="form-control"
+                id="pre-registration-message"
+                rows="4"
+              ></textarea>
             </div>
-          </div>
-        </form>
+            <div class="row">
+              <div class="submit text-end px-5">
+                <button
+                  type="submit"
+                  value="Se pré-inscrire"
+                  class="btn btn-primary"
+                >
+                  Se pré-inscrire
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
 
-      <section id="map" class="mt-5 p-1 bg-light">
-        <div class="container-fluid">
-          <h2 class="text-center mb-3">
-            Instructions pour aller au parc Monceau
-          </h2>
+      <section id="map" class="mt-5 p-1">
+        <h2 class="text-center mb-3">
+          Instructions pour aller au parc Monceau
+        </h2>
+        <div class="container-fluid bg-light">
           <div class="row">
             <div class="col-12 col-lg-7">
               <div class="gmap">
@@ -600,8 +611,9 @@
         </div>
       </section>
 
-      <section id="about-us" class="mt-5 p-1 bg-light">
-        <div class="container-fluid">
+      <section id="about-us" class="mt-5 p-1">
+        <h2 class="section-title text-center">A propos de nous</h2>
+        <div class="container-fluid bg-light">
           <div class="row">
             <div class="col-12 col-lg-7">
               <img
@@ -624,13 +636,14 @@
         </div>
       </section>
 
-      <section id="partner" class="mt-5 p-1 bg-light">
+      <section id="partner" class="mt-5 p-1">
+        <h2 class="section-title text-center">Nos partenaires</h2>
         <div class="cards d-flex justify-content-around flex-wrap">
-          <div class="card m-3" style="width: 400px">
+          <div class="card mx-1 my-3" style="width: 400px">
             <img src="images/logoparis.jpg" class="card-img-top" alt="..." />
             <div class="card-body text-center"></div>
           </div>
-          <div class="card m-3" style="width: 400px">
+          <div class="card mx-1 my-3" style="width: 400px">
             <img
               src="images/logo_ile_de_france.png"
               class="card-img-top"
@@ -638,7 +651,7 @@
             />
             <div class="card-body text-center"></div>
           </div>
-          <div class="card m-3" style="width: 400px">
+          <div class="card mx-1 my-3" style="width: 400px">
             <img
               src="images/Logo-ministere-de-la-culture.png"
               class="card-img-top"
