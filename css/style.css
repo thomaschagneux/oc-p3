@@ -2,17 +2,42 @@
   font-size: 18px;
 }
 
+body {
+  background-color: #800000c0;
+}
+
 .btn-primary {
   background: #800000;
-  color: #FFFFFF;
+  border-color: #800000;
+  color: #ffffff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #FFD700;
+.btn-primary:hover {
+  background-color: #ffd700;
+  border-color: #800000;
 }
 
-body {
-  background-color: #800000;
+.btn-primary:active {
+  background-color: #ffd700;
+  border-color: #800000;
+}
+
+.btn-primary:focus {
+  background-color: #ffd700;
+  border-color: #800000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffd700;
+}
+
+.box-shadow {
+  box-shadow: 10px 10px 5px;
 }
 
 header {
@@ -28,234 +53,101 @@ header {
 
 main {
   max-width: 1440px;
-}
 
-#calendar {
+  .section-body {
+    border-radius: 20px;
+  }
 
-  .note {
-    font-size: calc(0.5vw + 0.75rem);
-    text-align: center;
-    opacity: 0.5;
-  }
-  
-  .button {
-    display: inline-block;
-    padding: 0.5em 1em;
-    color: #fff;
-    font-weight: bold;
-    font-size: 0.6875em;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.0625em;
-    background-color: #800000;
-    border-radius: 1.5em;
-    cursor: pointer;
-  }
-  
-  .calendar-wrap {
-    width: 100%;
-    padding: 0.75em;
-    margin: auto;
-    font-size: 4vw;
-    background-color: #fff;
-    border-radius: 1.5em;
-    user-select: none;
-    box-shadow: 0 0.0625em 0.25em rgba(24, 54, 100, 0.2),
-      0 0.5em 0.5em 0.125em rgba(0, 20, 50, 0.1);
-  }
-  
-  @media (min-width: 500px) {
+  #calendar {
     .calendar-wrap {
-      width: 450px;
-      font-size: 1.25rem;
+      border-radius: 20px;
+    }
+
+    .calendar-layout {
+      .row {
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      .title:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: #800000;
+        margin-top: 10px; /* Adjust the margin as needed */
+      }
+
+      .day {
+        flex-grow: 1;
+        text-align: center;
+        padding: 5px;
+        border-radius: 30px;
+        border: solid 2px transparent;
+        cursor: pointer;
+      }
+
+      .day.today {
+        background-color: #800000;
+        color: #ffffff;
+      }
+
+      .day:hover {
+        color: #ffd700;
+        border: solid 2px #ffd700;
+      }
+
+      .day:active {
+        border: solid 2px #ffd700;
+      }
     }
   }
-  
-  .month-year {
-    margin-bottom: 0.75em;
-    font-weight: normal;
-    font-size: 1.25em;
-    text-align: center;
+
+  #poster {
+    .container {
+      display: flex;
+    }
+    .container .film {
+      width: 500px;
+    }
   }
-  
-  .calendar {
-    table-layout: fixed;
-    width: 100%;
-    margin-bottom: 0.75em;
-    overflow: hidden;
-    border-collapse: collapse;
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  .day-title {
-    width: 4em;
-    height: 4em;
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    letter-spacing: 0.0625em;
-    box-shadow: inset 0 -0.875em #fff, inset 0 -1em #800000;
-  }
-  
-  .day {
+
+  .card {
     position: relative;
-    height: 3em;
+    border-radius: 20px;
   }
-  
-  .day:focus {
-    outline: none;
-  }
-  
-  .day:focus .day-number::after {
-    content: "";
+
+  .text-overlay {
     position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    height: 80%;
-    transform: translate(-50%, -50%);
-    border: 0.25em solid #FFD700;
-    border-radius: 50%;
-  }
-  
-  .day.active-a:focus .day-number::after,
-  .day.active-b:focus .day-number::after {
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-  }
-  
-  .day.today:focus .day-number::after {
-    width: 102%;
-    height: 102%;
-  }
-  
-  .day:hover span.day-number {
-    color: #FFD700;
-  }
-  
-  .day:first-child,
-  .day:last-child {
-    color: rgba(170, 119, 119, 0.5);
-  }
-  
-  .day.range {
-    color: #FFD700;
-    background-color: #e1f5fe;
-  }
-  
-  .day.range.active-a,
-  .day:not(.range) + .day.range.active-b {
-    background-color: transparent;
-    box-shadow: inset -1.5em 0 #e1f5fe;
-  }
-  
-  .day.range.active-b,
-  .day.range + .day.range.active-a {
-    background-color: transparent;
-    box-shadow: inset 1.5em 0 #e1f5fe;
-  }
-  
-  .day.range.active-a:first-child,
-  .day.range.active-b:first-child {
-    box-shadow: none;
-  }
-  
-  .day.range.active-a:first-child + .day.range,
-  .day.range.active-b:first-child + .day.range {
-    box-shadow: -1.5em 0 #e1f5fe;
-  }
-  
-  .day.range.active-a:first-child + .day:not(.range),
-  .day.range.active-b:first-child + .day:not(.range) {
-    box-shadow: -4.5em 0 #e1f5fe;
-  }
-  
-  .day.range.active-a:first-child + .day.range.active-b {
-    box-shadow: -1.5em 0 #e1f5fe, inset 1.5em 0 #e1f5fe;
-  }
-  
-  .day-number {
-    position: relative;
-    z-index: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 3em;
-    border-radius: 50%;
-  }
-  
-  .day.active-a span.day-number,
-  .day.active-b span.day-number {
+    justify-content: center;
+    opacity: 0;
+    background-color: #800000;
     color: #fff;
-    background-color: #FFD700;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
   }
-  
-  .day.prev-mon .day-number,
-  .day.next-mon .day-number {
-    color: rgba(0, 0, 0, 0.3);
+
+  .card:hover .text-overlay {
+    opacity: 1;
   }
-  
-  .day.prev-mon[class*="active"] .day-number,
-  .day.next-mon[class*="active"] .day-number {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #81d4fa;
+
+  .carousel-item-img {
+    background-image: url("../images/galery1.jpg");
+    height: 500px;
   }
-  
-  .day.today span.day-number {
-    color: #fff;
-    border: 0.25em solid transparent;
-    box-shadow: inset 0 0 0 2em #800000;
+
+  .about-us p {
+    line-height: 3;
+    height: 100%;
   }
-  
-  .calendar-wrap .reset {
-    display: block;
-  }
-  
-}
-
-
-#poster .container {
-  display: flex;
-}
-#poster .container .film {
-  width: 500px;
-}
-
-.card {
-  position: relative;
-  border-radius: 20px;
-}
-
-.text-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  background-color: #800000;
-  color: #fff;
-  transition: opacity 0.3s ease;
-  border-radius: 20px;
-}
-
-.card:hover .text-overlay {
-  opacity: 1;
-}
-
-.carousel-item-img {
-  background-image: url("../images/galery1.jpg");
-  height: 500px;
-}
-
-.about-us p {
-  line-height: 3;
-  height: 100%;
 }
 
 footer {
