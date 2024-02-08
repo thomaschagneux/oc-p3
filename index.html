@@ -74,7 +74,7 @@
     </header>
     <main class="d-flex flex-column align-content-center container">
       <section id="poster" class="mt-5">
-        <h2 class="section-title text-center">Films à l'affiche</h2>
+        <h2 class="section-title text-center mb-3">Films à l'affiche</h2>
         <div
           class="section-body container d-flex flex-wrap justify-content-between bg-light box-shadow p-3"
         >
@@ -148,9 +148,9 @@
       </section>
 
       <section id="calendar" class="mt-5">
-        <h2 class="section-title text-center">Calendrier du festival</h2>
+        <h2 class="section-title text-center mb-3">Calendrier du festival</h2>
         <div class="section-body calendar-wrap bg-light box-shadow">
-          <h2 class="month-year text-center">Février 2024</h2>
+          <h2 class="month-year text-center pt-3">Février 2024</h2>
           <div class="calendar-layout p-3">
             <div class="row title fw-bold">
               <span class="day-title col-1">Lun</span>
@@ -203,14 +203,14 @@
       </section>
 
       <section id="actus" class="mt-5 row">
-        <h2 class="section-title text-center">
+        <h2 class="section-title text-center mb-3">
           Actualités de l'association et du festival
         </h2>
-        <div class="col-md-6">
-          <div class="articles">
-            <div class="container">
+        <div class="section-body bg-light box-shadow d-flex">
+          <div class="col-md-6 px-3">
+            <div class="articles">
               <div class="row">
-                <div class="card box-shadow primary-article col-12 m-1">
+                <div class="card primary-article col-12 p-0">
                   <div class="card-header text-center">
                     <h4 class="card-title">Lorem ipsum</h4>
                   </div>
@@ -220,6 +220,7 @@
                       Voir plus
                     </a>
                   </div>
+
                   <div class="card-body">
                     <img
                       src="./images/article.jpg"
@@ -235,76 +236,85 @@
                     </p>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="card box-shadow col-12 col-lg-6 p-1">
-                    <div class="card-header text-center">
-                      <h4 class="card-title">Lorem ipsum</h4>
-                    </div>
+              </div>
 
-                    <div class="text-overlay">
-                      <a href="" class="fs-5 text-light text-decoration-none">
-                        Voir plus
-                      </a>
-                    </div>
-                    <div class="card-body">
-                      <img
-                        src="./images/article.jpg"
-                        alt="Your Image"
-                        class="card-img-top"
-                      />
-                      <p class="text-secondary text-end pt-1">20-01-2024</p>
-                      <p class="card-text py-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        ...
-                      </p>
-                    </div>
+              <div class="row">
+                <div class="card secondary-article col-lg-6 p-0">
+                  <div class="card-header text-center">
+                    <h4 class="card-title">Lorem ipsum</h4>
                   </div>
-                  <div class="card box-shadow col-12 col-lg-6 p-1">
-                    <div class="card-header text-center">
-                      <h4 class="card-title">Lorem ipsum</h4>
-                    </div>
 
-                    <div class="text-overlay">
-                      <a href="" class="fs-5 text-light text-decoration-none">
-                        Voir plus
-                      </a>
-                    </div>
-                    <div class="card-body">
-                      <img
-                        src="./images/article.jpg"
-                        alt="Your Image"
-                        class="card-img-top"
-                      />
-                      <p class="text-secondary text-end pt-1">20-01-2024</p>
-                      <p class="card-text py-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Porro, ...
-                      </p>
-                    </div>
+                  <div class="text-overlay">
+                    <a href="" class="fs-5 text-light text-decoration-none">
+                      Voir plus
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <img
+                      src="./images/article.jpg"
+                      alt="Your Image"
+                      class="card-img-top"
+                    />
+                    <p class="text-secondary text-end pt-1">20-01-2024</p>
+                    <p class="card-text py-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Porro, corporis fugit. Quis sunt magnam sint. Harum
+                      dolorum veniam enim debitis eveniet qui itaque in? Quasi
+                      iste dignissimos est veniam unde.
+                    </p>
                   </div>
                 </div>
+                <div class="card secondary-article col-lg-6 p-0">
+                    
+                  <div class="card-header text-center">
+                    <h4 class="card-title">Lorem ipsum</h4>
+                  </div>
+
+                  <div class="text-overlay">
+                    <a href="" class="fs-5 text-light text-decoration-none">
+                      Voir plus
+                    </a>
+                  </div>
+
+                  <div class="card-body">
+                    <img
+                      src="./images/article.jpg"
+                      alt="Your Image"
+                      class="card-img-top"
+                    />
+                    <p class="text-secondary text-end pt-1">20-01-2024</p>
+                    <p class="card-text py-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Porro, corporis fugit. Quis sunt magnam sint. Harum
+                      dolorum veniam enim debitis eveniet qui itaque in? Quasi
+                      iste dignissimos est veniam unde.
+                    </p>
+                  </div>
+
+              </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="news-feed box-shadow p-0 col-lg-6">
-          <a
-            class="twitter-timeline"
-            data-height="1000px"
-            href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw"
-            >Tweets by XDevelopers</a
-          >
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
+          <div class="news-feed p-0 col-lg-6">
+            <a
+              class="twitter-timeline"
+              data-height="1000px"
+              href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw"
+              >Tweets by XDevelopers</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
         </div>
       </section>
 
       <section id="galery" class="mt-5">
-        <h2 class="section-title text-center">Galerie d'images</h2>
+        <h2 class="section-title text-center mb-3">Galerie d'images</h2>
         <div class="section-body box-shadow p-0">
           <div id="galery-carousel" class="carousel slide">
             <div class="carousel-indicators">
@@ -409,7 +419,9 @@
       </section>
 
       <section id="pre-registration" class="mt-5">
-        <h2 class="section-title text-center">Formulaire de pré-inscription</h2>
+        <h2 class="section-title text-center mb-3">
+          Formulaire de pré-inscription
+        </h2>
         <div class="section-body box-shadow bg-light p-3">
           <form method="get">
             <!-- nom / mail /  message -->
@@ -471,16 +483,16 @@
           <div class="row">
             <div class="col-12 col-lg-7">
               <div class="gmap h-100">
-                  <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735574306593!2d2.3040840917537633!3d48.87968692530546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1704974709612!5m2!1sfr!2sfr"
-                      class="container-fluid h-100"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735574306593!2d2.3040840917537633!3d48.87968692530546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1704974709612!5m2!1sfr!2sfr"
+                  class="container-fluid h-100"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
-          </div>
+            </div>
             <div class="col-12 col-lg-5">
               <p>En train:</p>
               <ol>
@@ -526,7 +538,7 @@
       </section>
 
       <section id="about-us" class="mt-5">
-        <h2 class="section-title text-center">A propos de nous</h2>
+        <h2 class="section-title text-center mb-3">A propos de nous</h2>
         <div class="section-body box-shadow bg-light p-3">
           <div class="row">
             <div class="col-12 col-lg-7">
@@ -551,7 +563,7 @@
       </section>
 
       <section id="partner" class="mt-5">
-        <h2 class="section-title text-center">Nos partenaires</h2>
+        <h2 class="section-title text-center mb-3">Nos partenaires</h2>
         <div class="d-flex justify-content-around flex-wrap">
           <div class="card box-shadow mx-1 my-3" style="width: 400px">
             <img src="images/logoparis.jpg" class="card-img-top" alt="..." />
