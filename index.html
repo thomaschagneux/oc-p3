@@ -76,7 +76,7 @@
       <section id="poster" class="mt-5">
         <h2 class="section-title text-center mb-3">Films à l'affiche</h2>
         <div
-          class="section-body container d-flex flex-wrap justify-content-between bg-light box-shadow p-3"
+          class="section-body container d-flex flex-wrap justify-content-around bg-light box-shadow p-3"
         >
           <div class="card my-3" style="width: 400px">
             <img src="./images/poster1.jpg" class="card-img-top" alt="..." />
@@ -149,55 +149,57 @@
 
       <section id="calendar" class="mt-5">
         <h2 class="section-title text-center mb-3">Calendrier du festival</h2>
-        <div class="section-body calendar-wrap bg-light box-shadow">
-          <h2 class="month-year text-center pt-3">Février 2024</h2>
-          <div class="calendar-layout p-3">
-            <div class="row title fw-bold">
-              <span class="day-title col-1">Lun</span>
-              <span class="day-title col-1">Mar</span>
-              <span class="day-title col-1">Mer</span>
-              <span class="day-title col-1">Jeu</span>
-              <span class="day-title col-1">Ven</span>
-              <span class="day-title col-1">Sam</span>
-              <span class="day-title col-1">Dim</span>
+        <div class="container d-flex justify-content-center text-end">
+          <div class="section-body calendar-wrap bg-light box-shadow">
+            <h2 class="month-year text-center pt-3">Février 2024</h2>
+            <div class="calendar-layout p-3">
+              <div class="row title fw-bold">
+                <span class="day-title col-1">Lun</span>
+                <span class="day-title col-1">Mar</span>
+                <span class="day-title col-1">Mer</span>
+                <span class="day-title col-1">Jeu</span>
+                <span class="day-title col-1">Ven</span>
+                <span class="day-title col-1">Sam</span>
+                <span class="day-title col-1">Dim</span>
+              </div>
+              <div class="row">
+                <span class="day col-1">1</span>
+                <span class="day col-1">2</span>
+                <span class="day col-1">3</span>
+                <span class="day col-1">4</span>
+                <span class="day col-1">5</span>
+                <span class="day col-1">6</span>
+                <span class="day col-1">7</span>
+              </div>
+              <div class="row">
+                <span class="day col-1">8</span>
+                <span class="day col-1">9</span>
+                <span class="day col-1">10</span>
+                <span class="day col-1 today">11</span>
+                <span class="day col-1">12</span>
+                <span class="day col-1">13</span>
+                <span class="day col-1">14</span>
+              </div>
+              <div class="row">
+                <span class="day col-1">15</span>
+                <span class="day col-1">16</span>
+                <span class="day col-1">17</span>
+                <span class="day col-1">18</span>
+                <span class="day col-1">19</span>
+                <span class="day col-1">20</span>
+                <span class="day col-1">21</span>
+              </div>
+              <div class="row">
+                <span class="day col-1">22</span>
+                <span class="day col-1">23</span>
+                <span class="day col-1">24</span>
+                <span class="day col-1">25</span>
+                <span class="day col-1">26</span>
+                <span class="day col-1">27</span>
+                <span class="day col-1">28</span>
+              </div>
+              <a class="btn btn-primary">Valider</a>
             </div>
-            <div class="row">
-              <span class="day col-1">1</span>
-              <span class="day col-1">2</span>
-              <span class="day col-1">3</span>
-              <span class="day col-1">4</span>
-              <span class="day col-1">5</span>
-              <span class="day col-1">6</span>
-              <span class="day col-1">7</span>
-            </div>
-            <div class="row">
-              <span class="day col-1">8</span>
-              <span class="day col-1">9</span>
-              <span class="day col-1">10</span>
-              <span class="day col-1 today">11</span>
-              <span class="day col-1">12</span>
-              <span class="day col-1">13</span>
-              <span class="day col-1">14</span>
-            </div>
-            <div class="row">
-              <span class="day col-1">15</span>
-              <span class="day col-1">16</span>
-              <span class="day col-1">17</span>
-              <span class="day col-1">18</span>
-              <span class="day col-1">19</span>
-              <span class="day col-1">20</span>
-              <span class="day col-1">21</span>
-            </div>
-            <div class="row">
-              <span class="day col-1">22</span>
-              <span class="day col-1">23</span>
-              <span class="day col-1">24</span>
-              <span class="day col-1">25</span>
-              <span class="day col-1">26</span>
-              <span class="day col-1">27</span>
-              <span class="day col-1">28</span>
-            </div>
-            <a class="btn btn-primary">Valider</a>
           </div>
         </div>
       </section>
@@ -206,7 +208,7 @@
         <h2 class="section-title text-center mb-3">
           Actualités de l'association et du festival
         </h2>
-        <div class="section-body row">
+        <div class="section-body row p-0">
           <div class="col-lg-6">
             <div class="articles">
               <div class="row">
@@ -300,27 +302,25 @@
           </div>
 
           <div class="news-feed col-lg-6">
-            <div class="card box-shadow">
+            <div class="card mt-3 overflow-auto box-shadow">
               <a
-              class="twitter-timeline"
-              data-height="1000px"
-              href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw"
-              ></a
-            >
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
+                class="twitter-timeline"
+                data-height="1198px"
+                href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw"
+              ></a>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
             </div>
-            
           </div>
         </div>
       </section>
 
       <section id="galery" class="mt-5">
         <h2 class="section-title text-center mb-3">Galerie d'images</h2>
-        <div class="section-body box-shadow p-0">
+        <div class="section-body box-shadow overflow-auto p-0">
           <div id="galery-carousel" class="carousel slide">
             <div class="carousel-indicators">
               <button
@@ -570,11 +570,14 @@
       <section id="partner" class="mt-5">
         <h2 class="section-title text-center mb-3">Nos partenaires</h2>
         <div class="d-flex justify-content-around flex-wrap">
-          <div class="card box-shadow mx-1 my-3" style="width: 400px">
+          <div
+            class="card box-shadow overflow-auto mx-1 my-3"
+            style="width: 400px"
+          >
             <img src="images/logoparis.jpg" class="card-img-top" alt="..." />
             <div class="card-body text-center"></div>
           </div>
-          <div class="card box-shadow my-3" style="width: 400px">
+          <div class="card box-shadow overflow-auto my-3" style="width: 400px">
             <img
               src="images/logo_ile_de_france.png"
               class="card-img-top"
@@ -582,7 +585,7 @@
             />
             <div class="card-body text-center"></div>
           </div>
-          <div class="card box-shadow my-3" style="width: 400px">
+          <div class="card box-shadow overflow-auto my-3" style="width: 400px">
             <img
               src="images/Logo-ministere-de-la-culture.png"
               class="card-img-top"

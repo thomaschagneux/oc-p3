@@ -61,6 +61,7 @@ main {
   #calendar {
     .calendar-wrap {
       border-radius: 20px;
+      max-width: 500px;;
     }
 
     .calendar-layout {
