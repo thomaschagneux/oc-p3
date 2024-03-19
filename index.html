@@ -63,7 +63,9 @@
               Some quick example text to build on the card title and make up
               the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#filmModal">
+              Voir plus >>
+            </button>
           </div>
         </div>
         <div class="card my-3" style="width: 400px">
@@ -74,7 +76,9 @@
               Some quick example text to build on the card title and make up
               the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#filmModal">
+              Voir plus >>
+            </button>
           </div>
         </div>
         <div class="card my-3" style="width: 400px">
@@ -85,7 +89,9 @@
               Some quick example text to build on the card title and make up
               the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#filmModal">
+              Voir plus >>
+            </button>
           </div>
         </div>
         <div class="card my-3" style="width: 400px">
@@ -96,7 +102,9 @@
               Some quick example text to build on the card title and make up
               the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#filmModal">
+              Voir plus >>
+            </button>
           </div>
         </div>
         <div class="card my-3" style="width: 400px">
@@ -107,7 +115,9 @@
               Some quick example text to build on the card title and make up
               the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#filmModal">
+              Voir plus >>
+            </button>
           </div>
         </div>
         <div class="card my-3" style="width: 400px">
@@ -118,11 +128,48 @@
               Some quick example text to build on the card title and make up
               the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#filmModal">
+              Voir plus >>
+            </button>
           </div>
         </div>
       </div>
     </section>
+
+
+
+    <!-- Modales -->
+    <div>
+      <div class="modal fade" id="filmModal" tabindex="-1" aria-labelledby="filmModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-5" id="filmModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Bande-annonce:</h6>
+              <div class="trailer-video">
+                <iframe  src="https://www.youtube.com/embed/h9041zYF5ZA?si=On6HMCD2tngQgyMD"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <h6>Synopsis:</h6>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Earum delectus voluptatibus minima sequi obcaecati corporis dolore natus nam cum odit, iste laborum.
+                Corporis, quidem! Nesciunt voluptatum laborum blanditiis veritatis amet.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <section id="calendar" class="mt-5">
       <h2 class="section-title text-center mb-3">Calendrier du festival</h2>
@@ -187,7 +234,7 @@
       </h2>
       <div class="section-body box-shadow bg-light p-3">
         <form method="get">
-          <!-- nom / mail /  message -->
+
           <div class="row d-flex justify-content-between px-5">
             <div class="mb-3 col-lg-6">
               <label for="pre-registration-name" class="form-label">Entrez votre nom:</label>
@@ -459,19 +506,19 @@
         <div class="card box-shadow overflow-auto mx-1 my-3" style="width: 400px">
           <a href="#">
             <img src="images/logoparis.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center"></div>
+            <div class="card-body text-center"></div>
           </a>
         </div>
         <div class="card box-shadow overflow-auto my-3" style="width: 400px">
           <a href="#" target="_blank">
             <img src="images/logo_ile_de_france.png" class="card-img-top" alt="...">
-          <div class="card-body text-center"></div>
+            <div class="card-body text-center"></div>
           </a>
         </div>
         <div class="card box-shadow overflow-auto my-3" style="width: 400px">
           <a href="#" target="_blank">
             <img src="images/Logo-ministere-de-la-culture.png" class="card-img-top" alt="...">
-          <div class="card-body text-center"></div>
+            <div class="card-body text-center"></div>
           </a>
         </div>
       </div>
